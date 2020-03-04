@@ -2,28 +2,38 @@
 	margin:0px;
 	padding:0px;
 }
+body{
+	background:#000000;
+}
 .contenedor{
 	width:85%;
+	max-width: 900px;
 	height:auto;
-	margin:5px auto;
+	margin:3px auto;
 }
 
 header{
 	width: 100%;
-	height:150px;
+	height:100px;
 	background-color: #5b7989;
 	border-radius: 12px 12px 0px 0px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 h1{
-	font-family: "TimesNewRoman",Times,srif;
-	font-style: italic;
-	font-size: 2.5vw;
+	font-family: 'Dancing Script', cursive;
+	font-size: 2.7vw;
+	letter-spacing: 1px;
 	text-align: left;
 	color:#FFFFFF;
 	text-shadow: 2px 2px 2px #02010a;
 	padding: 25px;
+}
+h3{
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.5vw;
+
 }
 nav{
 	width:25%;
@@ -32,27 +42,53 @@ nav{
 	justify-content: space-around;
 }
 nav a{
-	font-family: 'Satisfy', cursive;
-	font-size: 1.5vw;
-	color:yellow;
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.7vw;
+	color: gold;
 	text-decoration: none;
 }
 
-#s_izquierda{
-	width:50%;
-	height:200px;
+section{
+	display: flex;
+	flex-direction: column;
+}
+#img_central{
+	width:100%;
+	height:auto;
 	background-color:#82c3a6;
 }
-
-#s_derecha{
-	width: 50%;
-	height: 200px;
+#img_central img {
+	width:60%;
+	padding: 15px;
+	display: block;
+	margin:auto;
+}
+#img_secundaria{
+	width: 100%;
+	height: auto;
 	background-color:#d5c75f;
+	display: flex;
+}
+
+#img_secundaria figure{
+	width:50%;
+	padding: 15px;
+	display: flex;
+	justify-content: 
+}
+#img_secundaria>figure>img{
+	width:70%;
 }
 
 footer{
 	width:100%;
-	height: 150px;
+	height:150px;
 	border-radius: 0px 0px 12px 12px;
 	background-color: #C6d5c5;
+	display: flex;
+	justify-content: space-around;
 }
+.contacto{}
+.termino{}
+.redes{}
+.derecho{}
