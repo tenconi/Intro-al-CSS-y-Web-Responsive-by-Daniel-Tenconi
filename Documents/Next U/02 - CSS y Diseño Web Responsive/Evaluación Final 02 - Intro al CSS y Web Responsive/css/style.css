@@ -10,6 +10,18 @@ body{
 	max-width: 900px;
 	height:auto;
 	margin:3px auto;
+	animation:aparicion 2s;
+}
+
+@keyframes aparicion{
+	  0% {
+        margin-top: 150%;
+    }
+    60% {
+        margin-top: -5%;
+    }
+    100% {
+        margin-top: 0;}
 }
 
 header{
@@ -66,9 +78,10 @@ section{
 }
 #img_central img {
 	width:60%;
-	padding: 15px;
 	display: block;
-	margin:auto;
+	margin:15px auto;
+	box-shadow: 2px 2px 2px #82c3a6;
+	border:solid 2px #333;
 }
 #img_secundaria{
 	width: 100%;
@@ -87,6 +100,8 @@ section{
 #img_secundaria>figure>img{
 	width:80%;
 	margin: auto;
+	box-shadow: 2px 2px 2px #82c3a6;
+	border:solid 2px #333;
 }
 #img_secundaria>figure>figcaption{
 	font-family:'Dancing Script', cursive;
@@ -94,9 +109,10 @@ section{
 	font-style: bold;
 	text-align: center;
 	padding: 10px;
-}
+	}
 #img_secundaria figure:first-child img:hover{
-	animation:paisaje 1.5s;}
+	animation:paisaje 1.5s;
+}
 
 @-webkit-keyframes paisaje{
 	0%{transform:rotate(0);}
@@ -107,6 +123,20 @@ section{
 	0%{transform:rotate(0);}
 	50% {transform: rotate(10deg)}
 	100%{transform:rotate(0);}
+}
+
+#img_secundaria figure:last-child img:hover{
+	animation: retrato 1.5s;
+}
+@-webkit-keyframes retrato{
+	0%{}
+	50%{transform: translate(20px, -5px)}
+	100%{}
+}
+@-moz-keyframes retrato{
+	0%{}
+	50%{transform: translate(20px, -5px)}
+	100%{}
 }
 
 footer{
