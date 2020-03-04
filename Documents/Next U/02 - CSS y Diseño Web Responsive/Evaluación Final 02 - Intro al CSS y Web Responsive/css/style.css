@@ -33,7 +33,14 @@ h1{
 h3{
 	font-family: 'Dancing Script', cursive;
 	font-size: 1.5vw;
-
+	text-align: center;
+}
+p{
+	font-family: 'Arial', sanserif;
+	font-size: 10pt;
+}
+a{text-decoration: none;
+	color:darkslategrey;
 }
 nav{
 	width:25%;
@@ -68,16 +75,25 @@ section{
 	height: auto;
 	background-color:#d5c75f;
 	display: flex;
+	justify-content: space-around;
 }
 
 #img_secundaria figure{
 	width:50%;
 	padding: 15px;
 	display: flex;
-	justify-content: 
+	flex-direction: column;
 }
 #img_secundaria>figure>img{
-	width:70%;
+	width:80%;
+	margin: auto;
+}
+#img_secundaria>figure>figcaption{
+	font-family:'Dancing Script', cursive;
+	font-size: 1.7vw;
+	font-style: bold;
+	text-align: center;
+	padding: 10px;
 }
 
 footer{
@@ -87,8 +103,33 @@ footer{
 	background-color: #C6d5c5;
 	display: flex;
 	justify-content: space-around;
+	padding-top: 15px;
 }
+footer p{
+	font-size:8pt;
+	color: darkslategrey;}
 .contacto{}
 .termino{}
-.redes{}
+.redes{
+	display: flex;
+	flex-direction: column;
+}
+.redes img{
+	width:18px;
+	padding: 3px;
+}
+.redes.red{
+	margin: auto;
+	align-items: center;
+}
+.redes .red>a{
+	display: flex;
+	align-items: center;
+}
 .derecho{}
+.contacto, .termino, .redes, .derecho{
+	width:20%;
+	text-align: center;
+	line-height: 13pt;
+}
+h3+p{padding-top:10px }
