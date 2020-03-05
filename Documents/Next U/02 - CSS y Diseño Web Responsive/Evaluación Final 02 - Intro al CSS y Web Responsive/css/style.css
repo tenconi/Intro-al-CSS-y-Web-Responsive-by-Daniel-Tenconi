@@ -163,14 +163,22 @@ footer p{
 	width:16px;
 	padding: 3px;
 }
+/*
 .redes.red{
 	margin: auto;
 	align-items: center;
+}*/
+.redes_nav{
+	width:auto;
+	display:flex;
+	margin: auto;
+	align-self: center;
 }
+
 .redes .red>a{
-	display: flex;
+	display: inline-flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: -;
 }
 p+.red{
 	margin-top: 12px
@@ -211,3 +219,62 @@ h3+p{
 #landscape img:nth-child(3), #portraits img:nth-child(3){
 	filter: sepia(90%);
 }
+@media (min-width:725px){}
+
+@media screen and (max-width:425px){
+	.contenedor{
+		width:95%;
+	}
+	header{
+		width:100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		flex-wrap: nowrap;
+	}
+	h1{
+		font-size: 2em;
+		text-align: center;
+	}
+	h3{
+		font-size: 1.5em;
+		margin-top: 17px;
+	}
+	footer p{font-size: 0.8em}
+	nav{
+		width:95%;
+	}
+	nav>a{
+		font-size: 1.5em;}
+	#img_central>img{
+		width:95%;
+	}
+	#img_secundaria{
+		display: flex;
+		flex-direction: column;
+	}
+	.img_paisaje, .img_retrato{
+		width:100%;
+	}
+	.img_secundaria figure>img{
+		width:100%;
+	}
+
+	footer{
+		height: auto;
+		display:flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+	}
+	.contacto, .termino, .redes, .derecho{
+		width:95%;
+	}
+	.red_nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-top: 10px;}
+
+} 
