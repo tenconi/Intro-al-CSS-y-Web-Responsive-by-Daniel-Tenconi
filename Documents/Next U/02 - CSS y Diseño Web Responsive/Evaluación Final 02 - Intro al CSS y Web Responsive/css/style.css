@@ -46,6 +46,7 @@ h3{
 	font-family: 'Dancing Script', cursive;
 	font-size: 1.5vw;
 	text-align: center;
+	color:#444;
 }
 p{
 	font-family: 'Arial', sanserif;
@@ -55,7 +56,7 @@ a{text-decoration: none;
 	color:darkslategrey;
 }
 nav{
-	width:25%;
+	width:33%;
 	padding: 25px;
 	display: flex;
 	justify-content: space-around;
@@ -63,7 +64,7 @@ nav{
 nav a{
 	font-family: 'Dancing Script', cursive;
 	font-size: 1.7vw;
-	color: gold;
+	color: #FFF;
 	text-decoration: none;
 }
 
@@ -150,7 +151,8 @@ footer{
 }
 footer p{
 	font-size:8pt;
-	color: darkslategrey;}
+	color: darkslategrey;
+}
 .contacto{}
 .termino{}
 .redes{
@@ -158,7 +160,7 @@ footer p{
 	flex-direction: column;
 }
 .redes img{
-	width:18px;
+	width:16px;
 	padding: 3px;
 }
 .redes.red{
@@ -176,7 +178,7 @@ p+.red{
 .contacto, .termino, .redes, .derecho{
 	width:19%;
 	text-align: center;
-	line-height: 13pt;
+	line-height: 11pt;
 }
 h3+p{
 	padding-top:10px
@@ -184,7 +186,7 @@ h3+p{
 
 
 /* PAISAJES */
-#landscape {
+#landscape, #portraits {
 	width:100%;
 	background-color:#d5c75f;
 	display: inline-flex;
@@ -193,16 +195,19 @@ h3+p{
 	flex-wrap: wrap;
 }
 
-#landscape > img{
+#landscape > img, #portraits > img{
 	width:30%;
-	margin:15px auto;
+	margin:20px auto 30px;
 	border:solid 2px #333;
 	box-sizing: border-box;
 	box-shadow: 2px 2px 2px #82c3a6;	
 	}
-#landscape>img:nth-child(1){
+#landscape>img:nth-child(1), #portraits>img:nth-child(1){
 	filter: blur(10px);
 }
-#landscape>img:nth-child(even){
+#landscape>img:nth-child(even), #portraits>img:nth-child(even){
 	filter: grayscale(100%);
+}
+#landscape img:nth-child(3), #portraits img:nth-child(3){
+	filter: sepia(90%);
 }
